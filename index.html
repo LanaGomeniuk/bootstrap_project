@@ -21,16 +21,16 @@
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm bg-warning navbar-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-sm bg-warning navbar-light p-3 fixed-top">
       <div class="container-fluid">
         <!-- navbar brand -->
-        <a href="#" class="navbar-brand text-uppercase fw-bold">first website</a>
+        <a href="#" class="navbar-brand text-uppercase text-danger fw-bold">first website</a>
         <!-- toggler -->
         <button class="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarLinks">
-          <ul class="navbar-nav text-capitalize fw-bold">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarLinks">
+          <ul class="navbar-nav nav-fill text-capitalize fw-bold">
             <li class="navbar-item active">
               <a href="#header" class="nav-link">home</a>
             </li>
@@ -47,6 +47,10 @@
               <a href="#contact" class="nav-link">contact</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -443,7 +447,7 @@
               </div>
               <!-- end of title -->
               <div class="row">
-                <div class="col-md-8 mx-auto text-center">
+                <div class="col-md-8 col-lg-6 mx-auto text-center">
                   <div id="example" class="carousel slide" data-bs-ride="carousel">
                     <!-- indicators -->
                     <div class="carousel-indicators">
